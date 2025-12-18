@@ -6,7 +6,7 @@
  *                                                                                                *
  ************************************************************************************************ */
 
-/**
+/** task_1
  * Returns shallow copy of an object.
  *
  * @param {Object} obj - an object to copy
@@ -21,7 +21,7 @@ function shallowCopy(obj) {
   return { ...obj }; // 'assign'
 }
 
-/**
+/** task_2
  * Merges array of objects into a single object. If there are overlapping keys, the values
  * should be summed.
  *
@@ -41,7 +41,7 @@ function mergeObjects(objects) {
   }, {});
 }
 
-/**
+/** task_3
  * Removes a properties from an object.
  *
  * @param {Object} obj - The object from which to remove the property
@@ -62,7 +62,7 @@ function removeProperties(obj, keys) {
   return filtredObj;
 }
 
-/**
+/** task_4
  * Compares two source objects. Returns true if the objects are equal and false otherwise.
  * There are no nested objects.
  *
@@ -81,7 +81,7 @@ function compareObjects(obj1, obj2) {
   return arr1.every((key) => obj2[key] && obj1[key] === obj2[key]);
 }
 
-/**
+/** task_5
  * Checks if the source object is empty.
  * Returns true if the object contains no enumerable own properties, false otherwise.
  *
@@ -96,7 +96,7 @@ function isEmptyObject(obj) {
   return Object.keys(obj).length === 0;
 }
 
-/**
+/** task_6
  * Makes the source object immutable by preventing any changes to its properties.
  *
  * @param {Object} obj - The source object to make immutable
@@ -112,11 +112,11 @@ function isEmptyObject(obj) {
  *    immutableObj.newProp = 'new';
  *    console.log(immutableObj) => {a: 1, b: 2}
  */
-function makeImmutable(/* obj */) {
-  throw new Error('Not implemented');
+function makeImmutable(obj) {
+  return Object.freeze(obj);
 }
 
-/**
+/** task_7
  * Returns a word from letters whose positions are provided as an object.
  *
  * @param {Object} lettersObject - An object where keys are letters and values are arrays of positions
@@ -130,7 +130,7 @@ function makeWord(/* lettersObject */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_8
  * There is a queue for tickets to a popular movie.
  * The ticket seller sells one ticket at a time strictly in order and give the change.
  * The ticket costs 25. Customers pay with bills of 25, 50, or 100.
@@ -148,7 +148,7 @@ function sellTickets(/* queue */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_9
  * Returns the rectangle object with width and height parameters and getArea() method
  *
  * @param {number} width
@@ -165,7 +165,7 @@ function Rectangle(/* width, height */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_10
  * Returns the JSON representation of specified object
  *
  * @param {Object} obj
@@ -179,7 +179,7 @@ function getJSON(/* obj */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_11
  * Returns the object of specified type from JSON representation
  *
  * @param {Object} proto
@@ -194,7 +194,7 @@ function fromJSON(/* proto, json */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_12
  * Sorts the specified array by country name first and city name
  * (if countries are equal) in ascending order.
  *
@@ -229,7 +229,7 @@ function sortCitiesArray(/* arr */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_13
  * Groups elements of the specified array by key.
  * Returns multimap of keys extracted from array elements via keySelector callback
  * and values extracted via valueSelector callback.
@@ -268,7 +268,7 @@ function group(/* array, keySelector, valueSelector */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** task_14
  * Css selectors builder
  *
  * Each complex selector can consists of type, id, class, attribute, pseudo-class
