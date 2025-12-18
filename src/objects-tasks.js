@@ -55,8 +55,8 @@ function mergeObjects(objects) {
  *
  */
 function removeProperties(obj, keys) {
-  const filtredObj = {...obj};
-  keys.forEach(key => {
+  const filtredObj = { ...obj };
+  keys.forEach((key) => {
     delete filtredObj[key];
   });
   return filtredObj;
